@@ -1,0 +1,146 @@
+/* Global styles */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_1ZFdUUURywvcUKrEfhn6TYGCIJ0_nNrNLw&usqp=CAU');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 90%;
+  /* Set maximum width of container */
+  margin: 0 auto;
+  /* Center container horizontally */
+  padding: 20px;
+  /* Add padding around container */
+  box-sizing: border-box;
+
+  /* Add flexbox properties to center content vertically */
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.left-section {
+  flex-basis: 100%;
+  max-width: 800px; /* set a maximum width for the left section */
+  margin-right: auto; /* push the section to the left */
+}
+
+.right-section {
+  flex-basis: 100%;
+  margin-left: auto;
+  max-width: 800px; /* set a maximum width for the left section */
+  text-align: right;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  /* Set maximum width of images */
+  height: auto;
+  /* Set height to auto to maintain aspect ratio */
+  border-radius: 50%;
+}
+
+/* Header styles */
+
+header {
+  background-color: #2789b6;
+  /* Set background color of header */
+  color: white;
+  /* Set text color to white */
+  text-align: center;
+  /* Center header text */
+  padding: 20px;
+  /* Add padding to header */
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTsVLp1ZOhYAupci-n8RUy4hy7tyUTXB1lujMpi2D9j50iwwbfAhN-Xy9YQG3CI8TlLKo&usqp=CAU');
+  /* Add background image to header */
+  background-size: cover;
+  /* Scale the background image to cover the entire header */
+  background-position: center;
+  /* Center the background image within the header */
+}
+
+h1 {
+  font-size: 2.5rem;
+  /* Set font size for heading */
+  margin-top: 0;
+  /* Remove default margin for heading */
+}
+
+p {
+  font-size: 1.2rem;
+  /* Set font size for paragraphs */
+  line-height: 1.5;
+  /* Set line height for paragraphs */
+  margin-bottom: 1.5rem;
+  /* Add bottom margin to paragraphs */
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-section1 {
+  text-align: left;
+}
+
+.right-section1 {
+  margin-left: 0;
+  text-align: center;
+  margin-left: 350px;
+}
+
+h1 {
+  font-size: 72px;
+  /* Set font size of Hi! */
+  margin: 0;
+  /* Remove margin around Hi! */
+}
+
+h3 {
+  font-size: 24px;
+  /* Set font size of name */
+  margin: 0;
+  /* Remove margin around name */
+}
+
+.small {
+  font-size: 12px;
+  /* Set font size of note about picture */
+}
+
+@media (max-width: 768px) {
+  /* Styles for screens smaller than 768px */
+  .container {
+    padding: 10px;
+  }
+  
+  main {
+    flex-wrap: nowrap;
+    /* Prevent wrapping of flex items */
+  }
+  
+  .left-section1,
+  .right-section1 {
+    flex-basis: 100%;
+    max-width: none;
+    margin: 0;
+    text-align: center;
+  }
+}
